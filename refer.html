@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Refer - NextBucks</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="logo">NextBucks</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="deposit.html">Deposit</a>
+      <a href="payout.html">Payout</a>
+      <a href="packages.html">Packages</a>
+      <a href="tasks.html">Tasks</a>
+      <a href="refer.html" class="active">Refer</a>
+      <a href="profile.html">Profile</a>
+      <a href="settings.html">Settings</a>
+      <a href="login.html" id="loginLink">Login</a>
+      <a href="register.html" id="registerLink">Register</a>
+      <a href="#" id="logoutLink" style="display: none;">Logout</a>
+    </nav>
+  </div>
+
+  <!-- Menu Button -->
+  <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1>Refer and Earn</h1>
+    <p>Invite friends and earn 10% of their deposits!</p>
+
+    <div class="refer-box">
+      <label for="refLink">Your Referral Link:</label>
+      <input type="text" id="refLink" readonly value="http://nextbucks.mypressonline.com/register.html?ref=YourUsername">
+      <button onclick="copyRef()">Copy Link</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function copyRef() {
+      const refInput = document.getElementById("refLink");
+      refInput.select();
+      refInput.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      alert("Referral link copied!");
+    }
+  </script>
+</body>
+</html>

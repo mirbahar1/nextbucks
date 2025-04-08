@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deposit - NextBucks</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="logo">NextBucks</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="deposit.html">Deposit</a>
+      <a href="payout.html">Payout</a>
+      <a href="packages.html">Packages</a>
+      <a href="tasks.html">Tasks</a>
+      <a href="refer.html">Refer</a>
+      <a href="profile.html">Profile</a>
+      <a href="settings.html">Settings</a>
+      <a href="login.html" id="loginLink">Login</a>
+      <a href="register.html" id="registerLink">Register</a>
+      <a href="#" id="logoutLink" style="display: none;">Logout</a>
+    </nav>
+  </div>
+
+  <!-- Menu Button -->
+  <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1>Make a Deposit</h1>
+
+    <div class="form-box">
+      <label for="amount">Enter Amount (USDT):</label>
+      <input type="number" id="amount" placeholder="e.g. 100" required />
+
+      <label for="network">Select Chain:</label>
+      <select id="network">
+        <option value="trc20">USDT - TRC20</option>
+        <option value="erc20">USDT - ERC20</option>
+        <option value="bep20">USDT - BEP20</option>
+      </select>
+
+      <a href="usdt_deposit.html" class="btn">Proceed</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

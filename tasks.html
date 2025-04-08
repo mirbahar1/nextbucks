@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tasks - NextBucks</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="logo">NextBucks</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="deposit.html">Deposit</a>
+      <a href="payout.html">Payout</a>
+      <a href="packages.html">Packages</a>
+      <a href="tasks.html" class="active">Tasks</a>
+      <a href="refer.html">Refer</a>
+      <a href="profile.html">Profile</a>
+      <a href="settings.html">Settings</a>
+      <a href="login.html" id="loginLink">Login</a>
+      <a href="register.html" id="registerLink">Register</a>
+      <a href="#" id="logoutLink" style="display: none;">Logout</a>
+    </nav>
+  </div>
+
+  <!-- Menu Button -->
+  <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1>Available Tasks</h1>
+    <p>Complete the tasks below to earn rewards and bonuses!</p>
+
+    <div class="task-container">
+      <div class="task">
+        <h3>Task 1: Daily Login</h3>
+        <p>Earn 5% of your balance for logging in daily.</p>
+        <a href="task_complete.html" class="btn">Complete Task</a>
+      </div>
+
+      <div class="task">
+        <h3>Task 2: Refer a Friend</h3>
+        <p>Earn 10% for every friend you refer to the platform.</p>
+        <a href="refer.html" class="btn">Complete Task</a>
+      </div>
+
+      <div class="task">
+        <h3>Task 3: Social Media Share</h3>
+        <p>Share NextBucks on social media and earn $5!</p>
+        <a href="task_complete.html" class="btn">Complete Task</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

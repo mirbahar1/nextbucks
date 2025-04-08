@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Packages - NextBucks</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="logo">NextBucks</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="deposit.html">Deposit</a>
+      <a href="payout.html">Payout</a>
+      <a href="packages.html" class="active">Packages</a>
+      <a href="tasks.html">Tasks</a>
+      <a href="refer.html">Refer</a>
+      <a href="profile.html">Profile</a>
+      <a href="settings.html">Settings</a>
+      <a href="login.html" id="loginLink">Login</a>
+      <a href="register.html" id="registerLink">Register</a>
+      <a href="#" id="logoutLink" style="display: none;">Logout</a>
+    </nav>
+  </div>
+
+  <!-- Menu Button -->
+  <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1>Investment Packages</h1>
+    <p>Select your desired investment package to get started.</p>
+
+    <div class="package-container">
+      <div class="package">
+        <h3>Basic Package</h3>
+        <p>Starting at $50</p>
+        <p>10% Return</p>
+        <a href="deposit.html" class="btn">Invest Now</a>
+      </div>
+
+      <div class="package">
+        <h3>Standard Package</h3>
+        <p>Starting at $100</p>
+        <p>15% Return</p>
+        <a href="deposit.html" class="btn">Invest Now</a>
+      </div>
+
+      <div class="package">
+        <h3>Premium Package</h3>
+        <p>Starting at $500</p>
+        <p>25% Return</p>
+        <a href="deposit.html" class="btn">Invest Now</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
